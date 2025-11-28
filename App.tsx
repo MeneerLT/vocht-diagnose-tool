@@ -7,7 +7,7 @@ import { AddressStep } from './AddressStep';
 import { ResultsView } from './ResultsView';
 import { QUESTIONS } from './constants';
 import { UserContactInfo, AnalysisResult } from './types';
-import { submitAnalysisToBackend } from './services/backendSimulation';
+import { submitAnalysisToBackend } fro './backendSimulation';
 import { ArrowRight, Home, ShieldCheck, Clock } from 'lucide-react';
 
 enum Step {
