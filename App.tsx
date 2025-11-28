@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Header } from './components/Header';
-import { ProgressBar } from './components/ProgressBar';
-import { QuestionCard } from './components/QuestionCard';
-import { ContactForm } from './components/ContactForm';
-import { AddressStep } from './components/AddressStep';
-import { ResultsView } from './components/ResultsView';
+import { Header } from './Header';
+import { ProgressBar } from './ProgressBar';
+import { QuestionCard } from './QuestionCard';
+import { ContactForm } from './ContactForm';
+import { AddressStep } from './AddressStep';
+import { ResultsView } from './ResultsView';
 import { QUESTIONS } from './constants';
 import { UserContactInfo, AnalysisResult } from './types';
 import { submitAnalysisToBackend } from './services/backendSimulation';
