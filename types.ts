@@ -22,12 +22,13 @@ export interface Question {
 
 export interface UserContactInfo {
   name: string;
+  phone: string;
   street: string;
   houseNumber: string;
   zipcode: string;
   city: string;
   email: string;
-  constructionYear?: number; // Only keep what we can reliably fetch
+  constructionYear?: number;
 }
 
 export interface AnalysisResult {
@@ -35,16 +36,15 @@ export interface AnalysisResult {
   scores: { 
     cause: CauseType; 
     percentage: number;
-    description: string; // Full technical description
+    description: string;
   }[];
   summary: string;
-  interactionAnalysis: string; // New field for how causes reinforce each other
+  interactionAnalysis: string;
   recommendations: string[];
 }
 
-// Extend Window interface for external libraries
 declare global {
-  interface Window {
+  interface window {
     html2pdf: any;
   }
 }
